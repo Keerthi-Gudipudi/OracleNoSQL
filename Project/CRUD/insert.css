@@ -1,0 +1,26 @@
+.center_div{
+    margin: 0 auto;
+    width:40%;  /* value of your choice which suits your alignment */
+}
+
+.center_div2{
+    margin: auto;
+    width:90% ; 
+    padding-left: 1%;
+}
+.between_fields{
+    
+    padding-right: 4%;
+
+}
+.form_div{
+    padding: 1%;
+}
+
+.input-group.required .between_fields:after { 
+    color: #d00;
+    content: "*";
+    position: absolute;
+    margin-left: 8px;
+    top:7px;
+}

@@ -1,0 +1,40 @@
+<web-app version="5.0"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_5_0.xsd"> 
+  
+
+<servlet>  
+<servlet-name>queries</servlet-name>  
+<!--<jsp-file>register.html</jsp-file>-->
+<servlet-class>query_Text</servlet-class>  
+</servlet>  
+  
+
+    
+    
+<servlet>  
+<servlet-name>queryhtml</servlet-name>  
+<!--<jsp-file>register.html</jsp-file>-->
+<servlet-class>query_html</servlet-class>  
+</servlet>  
+    
+<servlet-mapping>  
+<servlet-name>queries</servlet-name>  
+<url-pattern>/queries</url-pattern>  
+</servlet-mapping> 
+  
+<servlet-mapping>  
+<servlet-name>queryhtml</servlet-name>  
+<url-pattern>/queryhtml</url-pattern>  
+</servlet-mapping> 
+    
+
+  
+<welcome-file-list>  
+    <welcome-file>display.jsp</welcome-file>  
+</welcome-file-list>  
+  
+</web-app>  
